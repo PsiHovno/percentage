@@ -28,7 +28,7 @@ namespace percentage
 
             // initialize menuItem
             menuItem.Index = 0;
-            menuItem.Text = "Exit";
+            menuItem.Text = "Salir";
             menuItem.Click += new System.EventHandler(menuItem_Click);
             notifyIcon.ContextMenu = contextMenu;
             batteryPercentage = "?";
@@ -61,7 +61,7 @@ namespace percentage
                             notifyIcon.Text = string.Format("{0:00}:{1:00}", ts.Hours, ts.Minutes);
                         } else {
                             notifyIcon.Icon = icon;
-                            notifyIcon.Text = "Charging";
+                            notifyIcon.Text = "Cargando";
                         }
                     }
                 }
